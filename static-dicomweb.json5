@@ -1,0 +1,17 @@
+{
+  staticWadoConfig: {
+    rootDir: '.',
+    extraDir: '~/dicomweb',
+    rootGroup: {
+      path: '/viewer-testdata',
+    },
+    extraGroup: {
+      path: '/dicomweb',
+      type: dicomweb,
+    },
+  },
+  dicomWebServerConfig: {
+    port: 3030,
+    dicomwebGroups: ['root', 'extra'],
+  },
+}
